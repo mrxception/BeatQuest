@@ -248,7 +248,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="21sp"
-                        android:text="Assasin"
+                        android:text="Assassin"
                         android:textColor="@color/white"
                         android:fontFamily="@font/pixel"/>
 
