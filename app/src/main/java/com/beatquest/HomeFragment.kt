@@ -1650,7 +1650,7 @@ class HomeFragment : Fragment(), SensorEventListener {
 
                 val request = Request.Builder()
                     .url("https://router.huggingface.co/novita/v3/openai/chat/completions")
-                    .header("Authorization", "Bearer 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")
+                    .header("Authorization", "Bearer HUGGING_FACE_API")
                     .post(requestBody)
                     .build()
 
