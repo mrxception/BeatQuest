@@ -1045,6 +1045,7 @@ class HomeFragment : Fragment(), SensorEventListener {
                 .apply(RequestOptions().fitCenter())
                 .into(playerHero)
 
+
             Glide.with(this)
                 .load(R.drawable.background_map)
                 .apply(RequestOptions()
@@ -1650,7 +1651,7 @@ class HomeFragment : Fragment(), SensorEventListener {
 
                 val request = Request.Builder()
                     .url("https://router.huggingface.co/novita/v3/openai/chat/completions")
-                    .header("Authorization", "Bearer HUGGING_FACE_API")
+                    .header("Authorization", "Bearer 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")
                     .post(requestBody)
                     .build()
 

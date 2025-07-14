@@ -369,7 +369,7 @@ class BattleFragment : Fragment() {
 
             val mana = playerManaBar.progress
             if (mana < damage) {
-                Toast.makeText(requireContext(), "Not enough mana for Skill $skillNumber!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Not enough mana for Skill $skillNumber! Need $damage mana, have $mana.", Toast.LENGTH_SHORT).show()
                 return@launch
             }
 
