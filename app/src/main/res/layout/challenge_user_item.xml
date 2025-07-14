@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="15dp">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/avatar"
+        android:background="@drawable/circle_border"
+        android:clipToOutline="true"/>
+
+    <TextView
+        android:id="@+id/users"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="user@example.com"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pixel"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btn_duel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DUEL"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pixel"
+        android:backgroundTint="#004E0D" />
+
+</LinearLayout>

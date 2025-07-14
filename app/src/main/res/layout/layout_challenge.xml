@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginHorizontal="15dp"
+    android:background="@drawable/round_corners"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Challenge Received"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pixel"
+        android:gravity="center"
+        android:padding="8dp"/>
+    <View
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="2dp"
+        android:background="#26FFFFFF"/>
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="challenged you! Do you accept?"
+        android:textSize="11sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pixel"
+        android:padding="8dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/btn_decline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decline"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/pixel"
+            android:backgroundTint="#500000"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/pixel"
+            android:backgroundTint="#004E0D"/>
+    </LinearLayout>
+</LinearLayout>

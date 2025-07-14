@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F0D15"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/user_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:padding="10dp"
+        android:background="@drawable/top_border">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/avatar"
+                android:background="@drawable/circle_border"
+                android:clipToOutline="true"/>
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, User!"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/pixel"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="androidx.fragment.app.Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/nav_bottom"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_border"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/transparent"
+                android:src="@drawable/vector"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
+
+            <View
+                android:id="@+id/indicatorHome"
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnBattle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/transparent"
+                android:src="@drawable/battle"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
+
+            <View
+                android:id="@+id/indicatorStats"
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnLdrbrd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/transparent"
+                android:src="@drawable/leaderboard"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
+
+            <View
+                android:id="@+id/indicatorLeaderBoard"
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24336016174",
+    "project_id": "wewe-b3760",
+    "storage_bucket": "wewe-b3760.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24336016174:android:bda54185ca9d87db3010bf",
+        "android_client_info": {
+          "package_name": "com.beatquest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDX2pj-kCdkZPVjJooaVxqa53iPGwKFls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

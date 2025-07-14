@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BeatQuest</string>
+    <string name="default_web_client_id">638378399138-i9qg3jo4quhd45c7brn7n7sl3e9s4qal.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
